@@ -1,15 +1,15 @@
 # Remora
 
-Remora is an application that manages portable Jellyfin installs on a Windows and Linux.
+Remora is an application that manages portable Jellyfin installs on Windows and Linux.
 
 I needed an easy way to manage a portable jellyfin install while visiting my parents, and remora is the result. Remora helps you setup a portable jellyfin server, and has the following features:
 
-- shows you the server address with with Copy and Open buttons
-- shows what's is playing, per device
+- shows you the server address with Copy and Open buttons
+- shows what's playing, per device
 - **keeps the machine awake while something is playing**
 - **stops the server by itself once unused**
 - sets up firewall rules for **Private networks**
-- helps setup fresh copy of Jellyfin
+- helps set up a fresh copy of Jellyfin
 - includes an **Add to Steam** button
 - includes a **Library** management page
 - includes a **User** management page
