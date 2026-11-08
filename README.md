@@ -1,50 +1,26 @@
 # Remora
 
-Remora is a manager for portable Jellyfin servers: a program that runs a
-portable Jellyfin server on whatever machine is travelling — a Windows laptop, a
-Linux laptop, a Steam Deck — to serve a TV on someone else's network. Each
-install stands alone, with its own library, users and key.
+Remora is an application that manages portable Jellyfin installs on a Windows and Linux.
 
-It began with the frustration of trying to stream films while visiting family:
-the laptop had the films, the TV had a Jellyfin app, and everything in between —
-starting the server, the firewall, the laptop going to sleep mid-film, finding
-the address to type in — was a fight. Remora is a portable install of Jellyfin
-that is easy to manage, with no extra hardware.
+I needed an easy way to manage a portable jellyfin install while visiting my parents, and remora is the result. Remora helps you setup a portable jellyfin server, and has the following features:
 
-One window does everything:
-
-- the server address to type into the TV, large, with Copy and Open buttons
-- what is playing, per device
-- **keeps the machine awake while something is playing**, by itself or through
-  Caffeine Party when installed; a pause of more than 30 minutes lets it sleep
-- **stops the server by itself once unused**: each time something is loaded the
-  stop moves to the end of it plus 30 minutes; with nothing played it stops 30
-  minutes after starting; the window being open and on screen keeps it running
-- network safety before starting: firewall rules for **Private networks only** on
-  Windows (one UAC prompt, the first time), the current zone on Fedora if it is not
-  `public` (asked once per zone), and a plain statement when there is no firewall
-- first-time setup of a fresh Jellyfin, or a one-time admin password to make this
-  machine's API key; the password is never stored
-- **Add to Steam**, as a button, on a machine with Steam
-- a **Library** page: add and remove libraries and their folders (the files
-  are never touched), and scan them all with progress; **Restart** on the
-  Status page
-- a **Users** page: set or remove any user's password, the administrator's too,
-  without the old one. Jellyfin then signs that user out everywhere, so the TV
-  signs in again; an administrator always keeps a password
-- on a Windows laptop with Modern Standby, **keeps Wi-Fi connected in standby
-  on battery while the server runs**, so the screen can turn off mid-film; the
-  previous setting comes back when the server stops
+- shows you the server address with with Copy and Open buttons
+- shows what's is playing, per device
+- **keeps the machine awake while something is playing**
+- **stops the server by itself once unused**
+- sets up firewall rules for **Private networks**
+- helps setup fresh copy of Jellyfin
+- includes an **Add to Steam** button
+- includes a **Library** management page
+- includes a **User** management page
 
 Closing the window stops the server.
 
-Remora is not made by or affiliated with the Jellyfin project. Its name stays
-clear of "Jellyfin", as Jellyfin's branding rules ask of third-party programs. Starting the program again while it runs
-brings the window back instead of starting a second server.
+Remora is not made by or affiliated with the Jellyfin project.
 
 ## Install
 
-One folder holds everything; the program is the only thing at its top:
+One folder includes all program files for the portable install.
 
 ```
 Jellyfin\
