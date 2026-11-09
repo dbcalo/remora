@@ -1,6 +1,7 @@
 # Remora
 
-Remora is an application that manages portable Jellyfin installs on Windows and Linux.
+Remora is an application that manages portable Jellyfin installs on Windows. Linux and
+Steam Deck support are works in progress: their windows are not built yet.
 
 I needed an easy way to manage a portable jellyfin install while visiting my parents, and remora is the result. Remora helps you setup a portable jellyfin server, and has the following features:
 
@@ -39,6 +40,8 @@ Jellyfin\
    cargo build --release; Copy-Item target\release\remora.exe 'C:\Jellyfin\Remora.exe'
    ```
 
+   On Linux (work in progress: it builds, but has no window yet):
+
    ```bash
    cargo build --release && cp target/release/remora ~/Jellyfin/remora
    ```
@@ -65,7 +68,9 @@ Optional, in `remora.json` beside the program:
 defaults to the program's own folder. `"idle_stop": {"off": true}`
 turns the auto-stop off. The program adds `approved_zones` itself.
 
-## Steam Deck
+## Steam Deck (work in progress)
+
+Not working yet: the Steam Deck window is still to be built. When it is:
 
 In Desktop Mode, start it and press **Add to Steam**. In Game Mode, launch it from
 the library: it detects Game Mode and fills the screen. Exiting the game stops the
