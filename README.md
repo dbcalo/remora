@@ -40,7 +40,7 @@ Jellyfin\
    cargo build --release; Copy-Item target\release\remora.exe 'C:\Jellyfin\Remora.exe'
    ```
 
-   On Linux (work in progress: it builds, but has no window yet):
+   On Linux (work in progress: not yet built or tested there):
 
    ```bash
    cargo build --release && cp target/release/remora ~/Jellyfin/remora
